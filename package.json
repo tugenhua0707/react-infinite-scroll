@@ -1,0 +1,35 @@
+{
+  "name": "react-infinite-scroll",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.js"
+  },
+  "author": "kongzhi",
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-addons-shallow-compare": "^15.3.1",
+    "react-dom": "^15.3.0",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^2.3.2",
+    "html-webpack-plugin": "^2.22.0",
+    "mb-react-infinite-scroll": "^1.2.2",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

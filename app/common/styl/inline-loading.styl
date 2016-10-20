@@ -1,0 +1,65 @@
+$rotate-list: (
+  1 0 -1.2s,
+  2 30 -1.1s,
+  3 60 -1.0s,
+  4 90 -.9s,
+  5 120 -.8s,
+  6 150 -.7s,
+  7 180 -.6s,
+  8 210 -.5s,
+  9 240 -.4s,
+  10 270 -.3s,
+  11 300 -.2s,
+  12 330 -.1s
+)
+
+.inline-loading {
+  .circle-color {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    & > div:before {
+      background-color: #ccc;
+    }
+    .page-infinite-loading div {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  .circle {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    &:before {
+      background-color: #ccc;
+      content: " ";
+      display: block;
+      margin: 0 auto;
+      width: 15%;
+      height: 15%;
+      border-radius: 100%;
+      -webkit-animation: kebab-fading-circle 1.2s infinite ease-in-out both;
+      animation: kebab-fading-circle 1.2s infinite ease-in-out both;
+    }
+  }
+  .text{
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+@keyframes kebab-fading-circle {
+  0%, 39%, to {
+    opacity: 0
+  }
+  40% {
+    opacity: 1
+  }
+}
